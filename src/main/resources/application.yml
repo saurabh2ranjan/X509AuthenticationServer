@@ -1,0 +1,16 @@
+server:
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: changeit
+    key-alias: localhost
+    key-password: changeit
+    enabled: true
+    trust-store: classpath:truststore.jks
+    trust-store-password: changeit
+    client-auth: need
+  port: 8443
+spring:
+  security:
+    user:
+      name: Admin
+      password: adminmvn
