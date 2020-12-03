@@ -48,6 +48,7 @@ keytool -import -trustcacerts -noprompt -alias ca -ext san=dns:localhost,ip:127.
 Create Client certificate. It will create client private key and unsigned certificate
 ======================================================================================
 openssl req  -config "D:\softwares\openssl-0.9.8k_X64\openssl.cnf" -new -newkey rsa:4096 -nodes -keyout clientBob.key –out clientBob.csr
+Important: Give CN name as "Bob".
 
 sign the client certificate with our CA certificate and CA key
 ===============================================================
